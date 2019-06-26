@@ -1,16 +1,6 @@
-#指定注册中心的地址
-eureka:
-  datacenter: cloud
-  environment: product
-  instance:
-    hostname: localhost
-  client:
-    healthcheck: true
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-datasource:
+
+spring:
+  datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
